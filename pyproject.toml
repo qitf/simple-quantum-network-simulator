@@ -1,0 +1,30 @@
+[project]
+name = "simple-quantum-network-simulator"
+version = "0.1.0"
+description = "Add your description here"
+authors = [
+    { name = "zigen", email = "hrlclb@gmail.com" }
+]
+dependencies = [
+    "simpy>=4.1.1",
+    "rich>=13.7.0",
+]
+readme = "README.md"
+requires-python = ">= 3.11"
+
+[project.scripts]
+hello = "simple_quantum_network_simulator:hello"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.rye]
+managed = true
+dev-dependencies = []
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/simple_quantum_network_simulator"]
