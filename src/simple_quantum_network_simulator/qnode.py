@@ -16,7 +16,8 @@ class QNode:
 
 
 if __name__ == "__main__":
-    address = QNodeAddress(1)
-    qnode = QNode(address)
-    print(qnode)
-    qnode.send("Hello, world!")
+    qnode1 = QNode(QNodeAddress(1))
+    qnode1.send("Hello, world!")
+
+    qnode2  = QNode(QNodeAddress(2))
+    packet = qnode2.receive()
