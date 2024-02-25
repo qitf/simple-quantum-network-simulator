@@ -7,5 +7,6 @@
     "python.languageServer": "Pylance",
     "pythonTestExplorer.testFramework": "pytest",
     "python.analysis.diagnosticMode": "workspace",
-    "python.analysis.typeCheckingMode": "standard"
+    "python.analysis.typeCheckingMode": "standard",
+    "editor.formatOnSave": true
 }
