@@ -1,4 +1,4 @@
-from simple_quantum_network_simulator.qnode import QNode
+from simple_quantum_network_simulator.base.qnode import QNode
 
 
 class Network:
