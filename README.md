@@ -3,16 +3,9 @@
 # Getting started
 
 first of all we need to prepare the environment.
-if you use [rye](https://rye-up.com/guide/), just sync it and then add pip
-because [maturin](https://www.maturin.rs/) requires pip with the selected python.
+if you use [rye](https://rye-up.com/guide/), just sync it.
 ```sh
 $ rye sync
-$ python -m ensurepip
-```
-
-if you're using devcontainer on Apple silicon,
-```sh
-$ python -m pip install polars-lts-cpu
 ```
 
 if you don't use rye, create virtualenv and install dependencies.
