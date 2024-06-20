@@ -1,19 +1,17 @@
-[project]
+[tool.poetry]
 name = "simple-quantum-network-simulator"
 version = "0.1.0"
 description = "Add your description here"
-authors = [
-    { name = "zigen", email = "hrlclb@gmail.com" }
-]
-dependencies = [
-    "simpy>=4.1.1",
-    "rich>=13.7.0",
-    "pytest>=8.0.1",
-]
+authors = ["zigen <hrlclb@gmail.com>"]
 readme = "README.md"
-requires-python = ">= 3.11"
 
-[project.scripts]
+[tool.poetry.dependencies]
+python = ">= 3.11"
+simpy = ">=4.1.1"
+rich = ">=13.7.0"
+pytest = ">=8.0.1"
+
+[tool.poetry.scripts]
 hello = "simple_quantum_network_simulator:hello"
 
 [build-system]
